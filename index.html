@@ -17,8 +17,23 @@
 	<script src="https://hwangsunha.github.io/page/js/jquery-3.3.1.min.js"></script>
 
 	<script type="text/javascript" src="https://hwangsunha.github.io/page/js/jquery.pagepiling.js"></script>
-	
-
+	<script>
+	$(document).ready(function() {
+	$('#pagepiling').pagepiling({
+	menu: '#menu',
+	anchors: ['page1', 'page2', 'page3', 'page4'],
+	    sectionsColor: ['#bfda00', '#2ebe21', '#2C3E50', '#51bec4'],
+	    navigation: {
+		'position': 'right',
+			'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Pgae 4']
+		},
+		afterRender: function(){
+			//playing the video
+			$('video').get(0).play();
+		}
+	});
+	});
+	</script>
     <style>
     	/* Centered texts in each section
 		* --------------------------------------- */
