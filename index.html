@@ -57,6 +57,23 @@
 	  		background-size: contain;
 	   		object-fit: cover; /*cover video background */
 		}
+	    
+	    #myVideo2{
+			position: absolute;
+			z-index: 4;
+			right: 0;
+			bottom: 0;
+			top:0;
+			right:0;
+			width: 100%;
+			height: 100%;
+			background-size: 100% 100%;
+	 		background-color: black; /* in case the video doesn't fit the whole page*/
+	  		background-image: /* our video */;
+	  		background-position: center center;
+	  		background-size: contain;
+	   		object-fit: cover; /*cover video background */
+		}
 
 		/* Layer with position absolute in order to have it over the video
 		* --------------------------------------- */
@@ -96,7 +113,7 @@
 	    	<video autoplay loop muted id="myVideo">
 				<source src="https://hwangsunha.github.io/page/imgs/Carol.mp4" type="video/mp4">
 				<source src="https://hwangsunha.github.io/page/imgs/Carol.webm" type="video/webm">
-			</video>
+		</video>
 			<div class="layer">
 				<h1>pagePiling.js video</h1>
 			</div>
@@ -106,6 +123,10 @@
 	    		<h1>No limits</h1>
 				<p>Anything is possible with pagePiling.js!</p>
 	    	</div>
+		    <video autoplay loop muted id="myVideo">
+				<source src="https://hwangsunha.github.io/page/imgs/Call.mp4" type="video/mp4">
+				<source src="https://hwangsunha.github.io/page/imgs/Call.webm" type="video/webm">
+		    </video>
 	    </div>
 	    <div class="section" id="section4">
 	    	<div class="intro">
